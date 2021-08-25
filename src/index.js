@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+let chars = "%c Todo List App running 🚀";
+let s = ["font-size: 12px", "font-family: monospace", "background: black", "display: inline-block", "color: yellow", "padding: 8px 19px", "border: 1px dashed yellow"].join(';')
+console.log(chars, s);
 
 ReactDOM.render(
   <React.StrictMode>
