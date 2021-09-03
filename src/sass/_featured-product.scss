@@ -1,0 +1,173 @@
+.featured-product {
+  padding-top: 2rem;
+
+  .product-border {
+    border-bottom: 4px solid $base-grey-border;
+    padding-bottom: 4em;
+
+    @media only screen and (max-width: $max-small-screen) {
+      padding-bottom: 2em;
+    }
+  }
+  .product-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 35px;
+    color: $base-black-primary;
+    margin-bottom: 1.5em;
+    z-index: 9;
+    font-family: $primary-font-family;
+
+    @media only screen and (max-width: $max-small-screen) {
+      font-size: 26px;
+    }
+  }
+  .add-btn {
+    font-size: 18px;
+    color: $base-white;
+    background-color: $base-black-primary;
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: $text-normal;
+    text-align: center;
+    letter-spacing: 0.07em;
+    border: 4px solid $base-black-primary;
+    margin: 0.5em 0em;
+    position: absolute;
+    top: 8em;
+    right: 4.46em;
+    z-index: 9;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      background-color: $base-white;
+      color: $base-black-primary;
+    }
+
+    @media only screen and (max-width: $max-small-screen) {
+      position: revert;
+      width: 100%;
+    }
+  }
+  .product {
+    .product-image {
+      vertical-align: middle;
+      height: auto;
+      width: 100%;
+      max-height: 550px;
+      object-fit: cover;
+    }
+    .product-image-tag {
+      font-size: 18px;
+      padding: 1em 2.2em;
+      background-color: $base-white;
+      font-family: $primary-font-family;
+      color: $base-black-primary;
+      font-style: normal;
+      font-weight: $text-normal;
+      z-index: 9;
+      display: inline-block;
+      position: relative;
+      left: 0em;
+      bottom: 3.5em;
+
+      @media only screen and (max-width: $max-small-screen) {
+        left: 0em;
+        position: relative;
+        bottom: 2em;
+        padding: 0.5em 1.2em;
+      }
+    }
+  }
+
+  .product-grid {
+    padding-top: 2em;
+
+    @media only screen and (max-width: $max-small-screen) {
+      padding-top: 1em;
+    }
+
+    .product-details {
+      padding-right: 3em;
+
+      @media only screen and (max-width: $max-small-screen) {
+        padding-right: unset;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-family: $primary-font-family;
+        color: $base-black-primary;
+        font-style: normal;
+        font-weight: $text-normal;
+      }
+      .tag {
+        font-size: 24px;
+        font-family: $primary-font-family;
+        color: $base-grey-dark;
+        font-style: normal;
+        font-weight: $text-normal;
+      }
+      .description {
+        font-size: 18px;
+        font-family: $primary-font-family;
+        color: $base-grey-dark;
+        font-style: normal;
+        font-weight: $text-light;
+        line-height: 2;
+      }
+    }
+
+    .product-suggestions {
+      h1 {
+        font-size: 24px;
+        font-family: $primary-font-family;
+        color: $base-black-primary;
+        font-style: normal;
+        font-weight: $text-normal;
+        text-align: right;
+        margin-bottom: 1.5em;
+      }
+      .product-suggestion-imgs {
+        margin-bottom: 20%;
+        .col {
+          padding-left: 1.5em;
+          img {
+            vertical-align: middle;
+            height: 110%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .detail {
+        font-size: 18px;
+        font-family: $primary-font-family;
+        color: $base-grey-dark;
+        font-style: normal;
+        font-weight: $text-light;
+        line-height: 1.7;
+        text-align: right;
+      }
+      @media only screen and (max-width: $max-small-screen) {
+        padding-top: 2em;
+
+        h1 {
+          text-align: left;
+        }
+        .product-suggestion-imgs {
+          text-align: left;
+          .col {
+            padding-left: unset;
+            padding: 1em;
+          }
+        }
+        .detail {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

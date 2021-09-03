@@ -1,0 +1,121 @@
+@import "variables";
+
+.cart {
+  position: absolute;
+  border: 3px solid $base-grey-border;
+  padding: 0.6em 1.4em;
+  min-width: 26%;
+  width: 30%;
+  right: 5em;
+  top: 7em;
+  background: $base-white;
+  z-index: 9;
+  transform: translateY(2em);
+  transition: transform 0.3s;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s;
+  }
+  &.hide {
+    visibility: hidden;
+  }
+
+  @media only screen and (max-width: $max-small-screen) {
+    width: 99%;
+    min-width: unset;
+    max-width: unset;
+    right: 0.15em;
+    top: 7em;
+  }
+
+  .close-btn {
+    right: 1.6em;
+    position: absolute;
+  }
+  .clear-btn {
+    font-size: 18px;
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.07em;
+    border: 4px solid $base-black-primary;
+    margin: 0.5em 0em;
+
+    &:hover {
+      background-color: $base-black-primary;
+      color: $base-white;
+      transition: 0.4s ease-in-out;
+    }
+  }
+  .item-list {
+    margin-top: 3em;
+    padding-left: 0em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid $base-grey-cart-list;
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    li {
+      list-style-type: none;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      .item-container {
+        align-items: center;
+      }
+
+      .item-name {
+        padding-top: 20px;
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: $base-black-primary;
+      }
+      .item-price {
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 22px;
+        color: $base-grey-dark;
+      }
+      .item-image-container {
+        img {
+          max-width: 170px;
+          max-height: 109px;
+          width: 170px;
+          height: auto;
+          display: block;
+          object-fit: cover;
+        }
+      }
+
+      @media only screen and (max-width: $max-small-screen) {
+        .item-name {
+          padding-top: unset;
+          font-size: 12px;
+          line-height: 22px;
+          margin-bottom: 6px;
+        }
+        .item-price {
+          font-size: 22px;
+          line-height: 22px;
+        }
+        .item-image-container {
+          div {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}

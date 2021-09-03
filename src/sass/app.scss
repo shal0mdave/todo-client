@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
+
+@import "variables";
+@import "global";
+@import "navbar";
+@import "cart";
+@import "featured-product";
+@import "sort";
+@import "filter";
+@import "products-grid";
+@import "pagination";

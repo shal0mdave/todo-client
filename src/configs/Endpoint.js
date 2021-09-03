@@ -1,0 +1,1 @@
+export const URL = "https://bejamas-ecommerce.herokuapp.com/products";

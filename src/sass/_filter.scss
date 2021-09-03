@@ -1,0 +1,76 @@
+@import "variables";
+
+.filter {
+  h1 {
+    font-size: 22px;
+    font-family: $primary-font-family;
+    color: $base-black-primary;
+    font-style: normal;
+    font-weight: $text-normal;
+    margin-bottom: 2em;
+  }
+  .categories {
+    border-bottom: 2px solid $base-grey-border;
+    max-height: 480px;
+    overflow-x: scroll;
+    margin-bottom: 2em;
+
+    .category {
+      padding-bottom: 2em;
+      padding-left: 2em;
+      input[type="checkbox"] {
+        width: 1.5em;
+        height: 1.5em;
+      }
+      label {
+        font-size: 20px;
+        font-family: $primary-font-family;
+        color: $base-black-primary;
+        font-style: normal;
+        font-weight: $text-light;
+        padding-left: 0.7em;
+      }
+    }
+  }
+
+  .price-range {
+    // padding-top: 2em;
+
+    h1 {
+      font-size: 22px;
+      font-family: $primary-font-family;
+      color: $base-black-primary;
+      font-style: normal;
+      font-weight: $text-normal;
+      margin-bottom: 2em;
+    }
+    .range {
+      margin-bottom: 2em;
+      input[type="checkbox"] {
+        width: 1.5em;
+        height: 1.5em;
+      }
+      label {
+        font-size: 20px;
+        font-family: $primary-font-family;
+        color: $base-black-primary;
+        font-style: normal;
+        font-weight: $text-light;
+        padding-left: 0.7em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $max-small-screen) {
+    transform: translateY(2em);
+    transition: transform 0.3s;
+
+    &.hidden{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $max-small-screen) {
+    padding: 0em 2em 4em 2em;
+  }
+}

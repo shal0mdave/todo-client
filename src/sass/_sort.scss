@@ -1,0 +1,90 @@
+@import "variables";
+
+.sort-section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  .tag {
+    .breadcrumb {
+      font-weight: $text-bold;
+      font-size: 30px;
+      line-height: 35px;
+      font-family: $primary-font-family;
+
+      a {
+        color: $base-black-primary;
+        text-decoration: none;
+      }
+      .active {
+        font-weight: $text-light;
+        font-size: 26px;
+      }
+
+      @media only screen and (max-width: $max-small-screen) {
+        font-size: 18px;
+
+        .active {
+          font-weight: $text-light;
+          font-size: 12px;
+        }
+      }
+    }
+    @media only screen and (max-width: $max-small-screen) {
+      padding-left: 1em;
+    }
+  }
+
+  .controls {
+    .desktop {
+      text-align: right;
+      color: $base-grey-light;
+      font-weight: $text-normal;
+      font-size: 18px;
+      line-height: 35px;
+      font-family: $primary-font-family;
+      button {
+        color: $base-grey-light;
+      }
+      select {
+        font-size: 18px;
+        line-height: 35px;
+        font-family: $primary-font-family;
+        color: $base-black-primary;
+        display: unset;
+        width: fit-content;
+        margin-left: 10px;
+        border: none;
+      }
+      @media only screen and (max-width: $max-small-screen) {
+        display: none;
+      }
+    }
+
+    .mobile {
+      .btn{
+        border: 1px solid $base-black-primary;
+        padding: 0px;
+        i {
+        
+          border-radius: 2px;
+          font-size: 16px;
+          padding-right: 8px;
+  
+          @media only screen and (max-width: $max-small-screen) {
+            padding-right: unset;
+            padding: 4px;
+          }
+        }
+      }
+      display: none;
+      @media only screen and (max-width: $max-small-screen) {
+        display: unset;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $max-small-screen) {
+    padding-top: 2em;
+    padding-bottom: 0em;
+  }
+}

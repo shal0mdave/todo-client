@@ -1,0 +1,48 @@
+@import "variables";
+
+nav {
+  background-color: $base-white;
+  padding: 0;
+  padding-bottom: 0 !important;
+  border: none;
+
+  .nav-border {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 4px solid $base-grey-border;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    .nav-item {
+      .nav-link {
+        background-color: $base-white;
+        border: none;
+        font-size: 40px;
+        color: $base-black-primary;
+        font-family: $primary-font-family;
+
+        .badge {
+          font-size: 12px;
+          border-radius: 0px;
+          background-color: $base-black-primary;
+          position: absolute;
+          bottom: 2.9em;
+          right: 6.4em;
+          padding: 0.2em 0.4em;
+
+          @media only screen and (max-width: $max-small-screen) {
+            bottom: 3.2em;
+            right: 0.7em;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "variables";
+
+// container
+.container-pad {
+  padding-left: 5em;
+  padding-right: 5em;
+
+  @media only screen and (max-width: $max-small-screen) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
